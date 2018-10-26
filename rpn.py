@@ -13,8 +13,8 @@ def calculate(arg):
             value = int(token)
             stack.append(value)
         except ValueError:
-            val1 = stack.pop()
             val2 = stack.pop()
+            val1 = stack.pop()
             if token == '+':
                 result = val1 + val2
             elif token == '-':
