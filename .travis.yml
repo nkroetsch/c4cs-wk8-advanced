@@ -3,5 +3,7 @@ python: "3.5"
 install:
   - pip install coverage
   - pip install python-coveralls
-script: make test
-after_success: coveralls
+script:
+  - make test
+after_success:
+  - coveralls
